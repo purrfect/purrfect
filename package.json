@@ -1,0 +1,23 @@
+{
+  "name": "nko4-vanilla-eaters",
+  "version": "0.0.0",
+  "description": "Vanilla Eaters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko4/vanilla-eaters.git"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "scss": "*",
+    "colors": "*",
+    "lodash": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

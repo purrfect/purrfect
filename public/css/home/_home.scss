@@ -1,0 +1,155 @@
+html {
+  /*background: #000;*/
+  height: 100%;
+  min-height: 700px;
+}
+
+body {
+  background: url(/img/background.png) 50% 0 repeat-x #0F0A33;
+  color: #B0D7FD;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  font-weight: 300;
+
+    .logo-wrapper {
+        width: 341px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        h1 {
+            position: relative;
+            font-size: 100px;
+            margin-top: 0;
+            font-family: 'Lobster', helvetica, arial;
+
+            a {
+                text-decoration: none;
+                color: #E9153F;
+                position: absolute;
+            }
+
+            &:after {
+                content : 'PURRfect';
+                color: #d6d6d6;
+                text-shadow: 0 1px 0 white;
+            }
+        }
+    }
+
+    .in-lobby {
+      color: white;
+      display: none;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .lower-content-wrapper {
+
+      form {
+        width: 756px;
+        margin: 0 auto;
+
+        .nickname-wrapper {
+          margin: 0 0 30px 0;
+          text-align: center;
+
+          ::-webkit-input-placeholder {
+            color: #8CA2FF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+          }
+
+          input {
+            border: 3px solid #b0d7fd;
+            background: #b0d7fd;
+            color: #0D1742;
+            width: 220px;
+            line-height: 26px;
+            text-align: center;
+          }
+
+          input.error {
+            border: 3px solid #E9153F;
+          }
+
+          select {
+            border: 3px solid #b0d7fd;
+            background: #b0d7fd;
+            color: #0D1742;
+            width: 220px;
+            line-height: 26px;
+            text-align: center;
+          }
+
+        }
+
+        .rooms-wrapper {
+          overflow: hidden;
+
+          div {
+            padding: 10px 6px;
+            margin: 0 auto;
+            float: none;
+            display: block;
+            width: 175px;
+            a {
+              display: block;
+              color: #b0d7fd;
+              text-decoration: none;
+              background: url(/img/paws.png) -3px 0 no-repeat;
+              width: 114px;
+              height: 68px;
+              font-family: 'Roboto', sans-serif;
+              font-size: 35px;
+              line-height: 20px;
+              padding: 108px 0 0 63px;
+
+              &:hover {
+                background: url(/img/paws.png) -372px 0 no-repeat;
+              }
+
+              span {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+              }
+            }
+
+            a.full {
+              color: #E9153F;
+              background: url(/img/paws.png) -188px 0 no-repeat;
+              font-family: 'Roboto', sans-serif;
+              cursor: default;
+            }
+          }
+
+        }
+
+        .rooms-wrapper.loading {
+          a {
+            opacity: 0.4;
+            background: url(/img/loading.gif) 0 0 no-repeat;
+          }
+        }
+
+        span.info {
+          display: inline-block;
+          color: #b0d7fd;
+          padding: 0 0 10px 0;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .info-wrapper {
+          text-align: center;
+          margin-top: 20px;
+
+          span.info.rooms {
+            padding: 30px 0 30px 0;
+          }
+        }
+      }
+    }
+}
